@@ -51,7 +51,7 @@ export const MobileIcon = styled.div`
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         cursor: pointer;
         color: #fff;
     }
@@ -62,7 +62,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
+    margin-right: -42px;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -83,7 +83,13 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid green;
+        // border-bottom: 3px solid #2590F5;
+        color: #2590F5;
+        font-weight: 700;
+    }
+
+    &:hover {
+        color: #67A8E6;
     }
 `;
 
@@ -98,11 +104,11 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
-    background: green;
+    background: #2590F5;
     white-space: nowrap;
-    padding: 10px 22px;
-    color: #010606;
-    font-size: 16px;
+    padding: 0.5rem 2.5rem;
+    color: #000;
+    font-size: 1rem;
     outline: none;
     border: none;
     cursor: pointer;
@@ -111,7 +117,7 @@ export const NavBtnLink = styled(LinkR)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
+        background: #67A8E6;
+        color: #000;
     }
 `;
